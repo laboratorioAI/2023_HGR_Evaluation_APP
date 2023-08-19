@@ -1,0 +1,58 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-size: 13px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251/var(--tw-bg-opacity));
+}
+
+.color{
+    color: gray;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.card-title {
+    --tw-text-opacity: 1;
+    font-weight: 500;
+    color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+td {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+p{
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+label {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.card {
+    padding: 1.5rem;
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(229 231 235/var(--tw-ring-opacity));
+    border-color: var(--tw-ring-color);
+
+}
+::placeholder{
+    font-size: 12px;
+}
+
+input[type="file"] {
+    font-size: 12px; /* Elige el tamaño de fuente deseado */
+}
+.btn {
+    font-size: 12px; /* Elige el tamaño de fuente deseado */
+}

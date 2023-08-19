@@ -1,0 +1,30 @@
+%% add this packages at the top of the latex doc.
+%%\usepackage{adjustbox}
+%%\usepackage{graphicx}
+%%\usepackage{multirow}
+%%\usepackage[table,xcdraw]{xcolor}
+
+
+\begin{table*}[htbp] %% recommended when the paper has 2 columns.
+%% \begin{table}[htbp] %% (Recommended to uncomment when the paper has 1 column.)
+
+\caption{Confusion Matrix of the Proposed Models} \label{tab:confMat}
+\centering
+%%\begin{adjustbox}{scale = 0.625} %% caso IEEE. Solo en ambiente table! Se puede añadir (",center")
+%%\small
+\begin{tabular}{c|cccccc|c}
+\hline
+	& \multicolumn{6}{c|}{}                             	&               \\
+\multirow{-2}{*}{}                	& \multicolumn{6}{c|}{\multirow{-2}{*}{Targets}}   	&               \\\cline{2-7}
+	& waveIn                                             	& waveOut       	& fist         	& open           	& pinch         	& noGesture      	& \multirow{-3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Predictions Count\\ (Precision)\end{tabular}}}   \\ \hline
+\multicolumn{1}{c|}{waveIn}	& \textbf{99}	& 6	& 0	& 0	& 0	& 0	& \textbf{\begin{tabular}[c]{@{}c@{}}105\\ 94.29\%\end{tabular}} \\\hline
+\multicolumn{1}{c|}{waveOut}	& 0	& \textbf{94}	& 0	& 0	& 0	& 0	& \textbf{\begin{tabular}[c]{@{}c@{}}94\\ 100\%\end{tabular}} \\\hline
+\multicolumn{1}{c|}{fist}	& 0	& 0	& \textbf{100}	& 0	& 0	& 0	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 100\%\\\end{tabular}} \\\hline
+\multicolumn{1}{c|}{open}	& 0	& 0	& 0	& \textbf{100}	& 0	& 0	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 100\%\\\end{tabular}} \\\hline
+\multicolumn{1}{c|}{pinch}	& 1	& 0	& 0	& 0	& \textbf{100}	& 0	& \textbf{\begin{tabular}[c]{@{}c@{}}101\\ 99.01\% \\\end{tabular}} \\ \hline
+\multicolumn{1}{c|}{noGesture}	& 0	& 0	& 0	& 0	& 0	& \textbf{100}	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 100\%\end{tabular}} \\ \hline\hline
+ \textbf{\begin{tabular}[c]{@{}c@{}}Targets Count\\ (Sensitivity)\end{tabular}} 	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 99\%\end{tabular}} 	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 94\%\end{tabular}} 	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 100\%\end{tabular}} 	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 100\%\end{tabular}} 	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 100\%\end{tabular}} 	& \textbf{\begin{tabular}[c]{@{}c@{}}100\\ 100\%\end{tabular}} 	& {\textbf{\begin{tabular}[c]{@{}c@{}}600\\ 98.83\%\end{tabular}}} \\ \hline
+\end{tabular}
+%%\end{adjustbox}
+%%\end{table}
+\end{table*}
